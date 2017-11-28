@@ -1,17 +1,23 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+      wtfffffff!!!!
     <h1>{{ msg }}</h1>
 
+   <!-- <router-link to="/">HomePage</router-link>
+    <router-view :homepage="homepage"></router-view>-->
   </div>
 </template>
 
 <script>
-export default {
+ /* import HomePage from './components/HomePage.vue'
+  import ReportPage from './components/ReportPage.vue'
+*/
+  export default {
   name: 'app',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Welcome to Your Vue.js App',
+
     }
   }
 }
