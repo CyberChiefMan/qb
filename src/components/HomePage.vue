@@ -2,8 +2,17 @@
     <div id="HomePage">
       <h1>{{ttt}}</h1>
       <h1>{{user.firstName}} is a {{user.lastName}}</h1>
-      <p v-if="showName" style="color:firebrick">{{user.firstName}} </p>
-      <p v-if="!showName" style="color:darkblue">{{user.lastName}} </p>
+     <!-- <p v-if="showName" style="color:firebrick">{{user.firstName}} </p>
+      <p v-if="!showName" style="color:darkblue">{{user.lastName}} </p>-->
+      <input type="text" v-model="title">
+
+      <button @click="greet"> Say greating</button>
+      <br>
+      <label>firstName</label><input type="text" v-model="user.firstName">
+      <br>
+      <label>lastName</label><input type="text" v-model="user.lastName">
+
+      <h3>{{fullName}}</h3>
     </div>
 </template>
 
@@ -12,7 +21,7 @@
         name: 'HomePage',
         data(){
             return {
-            ttt:'Hello World  ',
+            title:'Hello World  ',
               user:{
                 firstName:'mehdi',
                 lastName:'mahmoudi',
@@ -20,7 +29,19 @@
               },
               showName:true,
 
+
             }
-        }
+        },
+      methods:{
+            greet() {
+              alert("user.lastName");
+            }
+      },
+      computed:{
+         fullName(){
+             return this.user.firstName + ' ' + this.user.lastName ;
+
+         }
+      }
     }
 </script>

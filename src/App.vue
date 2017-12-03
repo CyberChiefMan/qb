@@ -1,21 +1,21 @@
 <template>
   <div id="app">
-    <HomePage></HomePage>
-    <ReportPage></ReportPage>
-
-     <!--<router-link to="/">HomePage</router-link>
-     <router-view :homepage="homepage"></router-view>-->
+      <Navbar></Navbar>
+    <!--<router-link to="/">HomePage</router-link>
+    <router-link to="/ReportPage">ReportPage</router-link>
+    <router-view></router-view>-->
   </div>
 </template>
 
 <script>
+  import Navbar from './components/Navbar.vue'
   import HomePage from './components/HomePage.vue'
   import ReportPage from './components/ReportPage.vue'
   export default {
     name: 'app',
     components: {
       HomePage,
-      ReportPage,
+      ReportPage,Navbar,
     },
     data () {
       return {
