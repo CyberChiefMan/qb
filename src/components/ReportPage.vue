@@ -7,7 +7,7 @@
 <script>
     export default{
         name: 'app',
-        date(){
+        data(){
             return {
 
             }
