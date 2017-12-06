@@ -2,8 +2,9 @@
   <div id="Navbar">
 
     <ul>
-      <li v-for="item in items"><a v-html="item.link"></a></li>
-    </ul><router-view></router-view>
+      <li v-for="item in items"><a v-html="item.link">"item.link"</a></li>
+    </ul>
+    <router-view></router-view>
 
 
   </div>
@@ -14,17 +15,18 @@
     name: 'Navbar',
     data(){
       return {
-        items:[
-          {title:'Home',
-           link:'<router-link to="/">HomePage</router-link>'
+        items: [
+          {
+            title: 'Home',
+            link: '<router-link to="/">HomePage</router-link>'
           },
-          {title:'Report',
-            link:'<router-link to="/">ReportPage</router-link>'},
-
-
+          {
+            title: 'Report',
+            link: '<router-link to="/">ReportPage</router-link>'
+          },
         ],
 
-    }
+      }
     }
   }
 </script>
