@@ -34,7 +34,7 @@
         },
       methods:{
             greet() {
-              alert("user.lastName");
+              alert('greeting my friend');
             }
       },
       computed:{
