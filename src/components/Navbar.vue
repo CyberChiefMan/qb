@@ -25,6 +25,7 @@
     </ul>-->
     <router-link to="/">HomePage</router-link>
     <router-link to="/ReportPage">ReportPage</router-link>
+    <router-link to="/Router">Router</router-link>
     <router-view></router-view>
 
 

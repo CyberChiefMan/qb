@@ -11,6 +11,7 @@
   import Navbar from './components/Navbar.vue'
   import HomePage from './components/HomePage.vue'
   import ReportPage from './components/ReportPage.vue'
+  import Router from './components/Router.vue'
   export default {
     name: 'app',
     components: {
