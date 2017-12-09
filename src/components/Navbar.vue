@@ -9,7 +9,10 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li v-for="item in items" class="nav-item ">
-            <a class="nav-link " v-html="item.link">"item.link"<span class="sr-only">(current)</span></a>
+            <!-- <button class="btn"v-html="item.link" >"item.link"</button> -->
+            <a class="nav-link " v-html="item.link" @click="call">
+              <span class="sr-only">(current)</span>
+            </a>
           </li>
 
 
@@ -20,6 +23,8 @@
     <!--<ul>
       <li v-for="item in items"><a v-html="item.link">"item.link"</a></li>
     </ul>-->
+    <router-link to="/">HomePage</router-link>
+    <router-link to="/ReportPage">ReportPage</router-link>
     <router-view></router-view>
 
 
@@ -38,10 +43,19 @@
           },
           {
             title: 'Report',
-            link: '<router-link to="/">ReportPage</router-link>'
+            link: '<router-link to="/ReportPage">ReportPage</router-link>'
+          },
+          {
+            title: 'Router',
+            link: '<router-link to="/Router">Router</router-link>'
           },
         ],
 
+      }
+    },
+    methods:{
+      call(){
+        alert('clicked');
       }
     }
   }

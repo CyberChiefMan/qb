@@ -34,8 +34,9 @@
         },
       methods:{
             greet() {
-              alert('greeting my friend');
-            }
+              alert( 'greeting');
+            },
+
       },
       computed:{
          fullName(){

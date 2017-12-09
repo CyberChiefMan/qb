@@ -1,9 +1,9 @@
 <template>
   <div id="app">
       <Navbar></Navbar>
-    <!--<router-link to="/">HomePage</router-link>
-    <router-link to="/ReportPage">ReportPage</router-link>
-    <router-view></router-view>-->
+    <!-- <router-link to="/">HomePage</router-link>
+    <router-link to="/ReportPage">ReportPage</router-link> -->
+    <router-view></router-view>
   </div>
 </template>
 
@@ -15,11 +15,12 @@
     name: 'app',
     components: {
       HomePage,
-      ReportPage,Navbar,
+      ReportPage,
+      Navbar,
     },
     data () {
       return {
-        msg: 'Welcome to Your Vue.js App',
+
 
       }
     }
