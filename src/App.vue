@@ -1,9 +1,7 @@
 <template>
   <div id="app">
       <Navbar></Navbar>
-    <!-- <router-link to="/">HomePage</router-link>
-    <router-link to="/ReportPage">ReportPage</router-link> -->
-    <router-view></router-view>
+      <router-view></router-view>
   </div>
 </template>
 
